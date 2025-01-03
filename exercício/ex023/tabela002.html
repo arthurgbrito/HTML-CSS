@@ -14,6 +14,17 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            color: white;
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 10px 10px 0 0;
         }
 
         thead, tfoot {
@@ -24,6 +35,21 @@
         td, th {
             border: 1px solid black;
             padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgreen;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightpink;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            border: 1px solid black;
         }
 
         .num {
@@ -51,10 +77,11 @@
     -->
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -85,11 +112,40 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População Total</th>
+                <th scope="row">População Total</th>
                 <td class="num">212 583 720</td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus amet dignissimos ut provident modi nobis, nostrum accusamus dicta vero asperiores. Sapiente enim est voluptatibus odio eveniet minus veritatis incidunt!
+    Odio cupiditate ipsa magni voluptatibus. Ab numquam accusamus molestias quidem tempora modi incidunt, sequi iure, quo repellendus deserunt eius praesentium accusantium nisi maiores dolore rerum doloribus fugit in laborum vitae?
+    Veritatis voluptatum nesciunt illum sequi provident impedit? Vero voluptatem, quidem dolor optio enim eos quasi voluptates nisi alias, accusamus eveniet animi natus maxime ea nobis, id repellat. Temporibus, vero! Optio.
+    Officiis tempora sit quisquam praesentium. Mollitia accusantium ab sint laudantium molestiae accusamus nesciunt pariatur architecto. Voluptatibus neque, ullam assumenda minus beatae iste itaque libero quaerat. Inventore expedita eos fugit sapiente?</p>
 
 </body>
 </html>
