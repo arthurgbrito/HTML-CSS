@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando colunas de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+
+        .nome {
+            background-color: rgb(153, 205, 50);
+            text-align: right;
+        }
+
+        .sexo {
+            background-color: rebeccapurple;
+        }
+
+        .idade {
+            background-color: lightgray;
+        }
+
+        .prof {
+            background-color: burlywood;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <colgroup>
+            
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="prof">
+
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Militar</td>
+        </tr>
+        <tr>
+            <td>Nicolas</td>
+            <td>M</td>
+            <td>49</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Francisca</td>
+            <td>F</td>
+            <td>98</td>
+            <td>Aposentada</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
