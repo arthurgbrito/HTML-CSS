@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css" medi="all">
     <link rel="stylesheet" href="estilos/medias.css">
 </head>
@@ -11,30 +12,48 @@
 
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="menu-hamburguer" onclick="AbreMenu()">menu</span>
+        
+        <menu id="menu">
             <ul>
-                <li>Opção 1</li>
-                <li>Opção 2</li>
-                <li>Opção 3</li>
-                <li>Opção 4</li>
-                <li>Opção 5</li>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
             </ul>
         </menu>
     </header>
     <main>
 
-        <h2>Testando Media Queries</h2>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores dolorum iure omnis ab, tempora, non eaque molestias qui quibusdam quod! Maxime commodi eligendi, dolorem iste fugiat dolores ad minus!
-        Distinctio, quaerat atque laborum, pariatur soluta adipisci veritatis eveniet, mollitia odit doloribus consequatur iste magni accusamus recusandae ipsam consequuntur nisi perferendis velit nam voluptate architecto. Necessitatibus itaque dignissimos eos corrupti.
-        Quia adipisci aperiam expedita, tempore repudiandae ratione? Soluta deleniti explicabo itaque magni optio ratione perspiciatis corporis iusto nobis! At laudantium eaque quae porro, pariatur sit. Accusamus aliquid error ratione sunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt aperiam amet temporibus illo ea accusantium vero molestias laudantium esse quae ab dignissimos exercitationem, fuga dolore laborum? Enim, aspernatur autem!
-        Consequatur autem adipisci debitis soluta cum assumenda temporibus possimus, mollitia necessitatibus itaque error eum commodi neque magnam reprehenderit, laboriosam exercitationem non! Aspernatur, eaque consequatur vitae eveniet quaerat in facilis soluta?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aperiam, inventore tenetur rerum necessitatibus aliquid perspiciatis qui perferendis voluptas distinctio a repellat, quidem doloremque id! Nobis aspernatur qui tempore fugiat.
-        Est odio molestias, inventore architecto, neque accusamus placeat distinctio nam ratione esse quisquam obcaecati commodi et aspernatur assumenda perferendis debitis eum sapiente delectus velit quod omnis dolorem. Inventore, cupiditate odit?
-        Fugiat quibusdam enim neque libero accusantium numquam non dolor asperiores quisquam voluptatum, alias quam sunt placeat pariatur sint delectus dolorem, obcaecati laboriosam, ullam iusto ipsam quod. Tenetur nulla delectus tempore?</p>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse maiores dolorum iure omnis ab, tempora, non eaque molestias qui quibusdam quod! Maxime commodi eligendi, dolorem iste fugiat dolores ad minus!
+            Distinctio, quaerat atque laborum, pariatur soluta adipisci veritatis eveniet, mollitia odit doloribus consequatur iste magni accusamus recusandae ipsam consequuntur nisi perferendis velit nam voluptate architecto. Necessitatibus itaque dignissimos eos corrupti.
+            Quia adipisci aperiam expedita, tempore repudiandae ratione? Soluta deleniti explicabo itaque magni optio ratione perspiciatis corporis iusto nobis! At laudantium eaque quae porro, pariatur sit. Accusamus aliquid error ratione sunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt aperiam amet temporibus illo ea accusantium vero molestias laudantium esse quae ab dignissimos exercitationem, fuga dolore laborum? Enim, aspernatur autem!
+            Consequatur autem adipisci debitis soluta cum assumenda temporibus possimus, mollitia necessitatibus itaque error eum commodi neque magnam reprehenderit, laboriosam exercitationem non! Aspernatur, eaque consequatur vitae eveniet quaerat in facilis soluta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aperiam, inventore tenetur rerum necessitatibus aliquid perspiciatis qui perferendis voluptas distinctio a repellat, quidem doloremque id! Nobis aspernatur qui tempore fugiat.
+            Est odio molestias, inventore architecto, neque accusamus placeat distinctio nam ratione esse quisquam obcaecati commodi et aspernatur assumenda perferendis debitis eum sapiente delectus velit quod omnis dolorem. Inventore, cupiditate odit?
+            Fugiat quibusdam enim neque libero accusantium numquam non dolor asperiores quisquam voluptatum, alias quam sunt placeat pariatur sint delectus dolorem, obcaecati laboriosam, ullam iusto ipsam quod. Tenetur nulla delectus tempore?</p>
+        </article>
 
     </main>
+
+    <script>
+
+        const menu = document.getElementById('menu')
+
+        function AbreMenu () {
+
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+
+    </script>
 
 </body>
 </html>
