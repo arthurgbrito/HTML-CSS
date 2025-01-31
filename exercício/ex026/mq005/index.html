@@ -43,15 +43,31 @@
     <script>
 
         const menu = document.getElementById('menu')
+        const burguer = document.getElementById('menu-hamburguer')
 
         function AbreMenu () {
 
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
+                burguer.style.backgroundColor = 'transparent'
             } else {
                 menu.style.display = 'block'
+                burguer.style.backgroundColor = 'black'
             }
         }
+
+        addEventListener('resize', function atualizaLargura() {
+
+            if (innerWidth > 768){
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+
+        })
+
+
+        
 
     </script>
 

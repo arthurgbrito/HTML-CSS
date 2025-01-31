@@ -1,0 +1,22 @@
+
+
+@media screen and (min-width: 768px) {
+    #menu-hamburguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: gray;
+    }
+
+    menu ul li {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 840px;
+    }
+}

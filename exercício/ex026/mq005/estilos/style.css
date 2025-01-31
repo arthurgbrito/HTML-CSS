@@ -22,9 +22,12 @@ header h1 {
 }
 
 #menu-hamburguer {
+    width: 50px;
+    margin: 5px auto;
     display: block;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
     cursor: pointer;
 }
 
