@@ -1,2 +1,66 @@
 
 /*Estilo para os demais tamanhos de tela*/
+
+/*
+Typical Device Breakpoints
+
+Pequenas telas: até 600px
+Celular: entre 600px e 768px
+Tablet: entre 768px e 992px
+Desktop: entre 992px e 1200px
+Telas grandes: acima de 1200px 
+*/
+
+@media print {
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #print { display: block;}
+    #tv { display: none;}
+    #pc { display: none;}
+    #tablet { display: none;}
+    #phone { display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
+
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    #tablet { display: block;}
+    #phone { display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { /* Desktops */
+
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    #pc { display: block;}
+    #tablet { display: none;}
+    #phone { display: none;}
+}
+
+@media screen and (min-width: 1201px) { /* Telas Grandes */
+
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    #tv { display: block;}
+    #pc { display: none;}
+    #tablet { display: none;}
+    #phone { display: none;}
+
+} 
