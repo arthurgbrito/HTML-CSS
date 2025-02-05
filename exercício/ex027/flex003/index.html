@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+
+        .conteiner {
+            background-color: burlywood;
+            height: 90px;
+            display: flex;
+            flex-flow: column wrap;
+        } 
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="item">Exemplo de caixa A</div>
+        <div class="item">Exemplo de caixa B</div>
+        <div class="item">Exemplo de caixa C</div>
+        <div class="item">Exemplo de caixa D</div>
+        <div class="item">Exemplo de caixa E</div>
+        <div class="item">Exemplo de caixa F</div>
+    </div>
+    
+</body>
+</html>
