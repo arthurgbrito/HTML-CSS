@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+
+        .conteiner {
+            background-color: burlywood;
+            display: flex;
+            flex-flow: row nowrap;
+        } 
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 700px){
+            .conteiner {
+                flex-flow: column nowrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic omnis laboriosam dolores obcaecati assumenda? Harum quisquam neque repellat enim magnam porro, delectus esse, blanditiis non, laudantium iste qui exercitationem veniam!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magni sunt id soluta sint vel provident neque. Fuga quia beatae porro minima velit, fugit, illo odio accusantium ratione vitae sint.
+        Minima quaerat nihil laudantium voluptatum dicta, maiores ratione enim autem id est repellendus ullam eius, odio cum voluptates quas? Deserunt ut, nesciunt velit minus maiores voluptates beatae assumenda aliquid veritatis?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quas architecto eius veniam quidem quo assumenda vel iste maxime earum, harum deleniti, delectus atque cupiditate maiores blanditiis possimus sint sapiente.
+        In quibusdam ducimus architecto, expedita impedit maiores eaque ex provident omnis temporibus. Deserunt eius tenetur laudantium nemo! Libero ipsum dolor beatae aspernatur, voluptate consequuntur minima distinctio dolorem fuga repellat eveniet?
+        Dicta, error? Obcaecati natus consectetur eum fuga omnis rerum et dolor quasi quaerat maxime iste nulla fugit quibusdam eius, vitae quod. Quas quo quis fugiat, consectetur quia delectus eligendi omnis.</div>
+    </div>
+    
+</body>
+</html>
